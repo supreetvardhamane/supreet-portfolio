@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" role="img" aria-label="Smart Urban Management preview placeholder">
+  <defs>
+    <linearGradient id="su-g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0f1117"/>
+      <stop offset="1" stop-color="#161b22"/>
+    </linearGradient>
+    <radialGradient id="su-glow" cx="0.22" cy="0.18" r="0.7">
+      <stop offset="0" stop-color="#3fb950" stop-opacity="0.16"/>
+      <stop offset="1" stop-color="#3fb950" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="640" height="360" fill="url(#su-g)"/>
+  <rect width="640" height="360" fill="url(#su-glow)"/>
+  <g fill="#2d333b"><circle cx="28" cy="28" r="6"/><circle cx="50" cy="28" r="6"/><circle cx="72" cy="28" r="6"/></g>
+  <line x1="0" y1="52" x2="640" y2="52" stroke="#2d333b"/>
+  <text x="40" y="170" font-family="'JetBrains Mono',monospace" font-size="34" font-weight="700" fill="#e6edf3">Smart Urban</text>
+  <text x="40" y="206" font-family="'JetBrains Mono',monospace" font-size="34" font-weight="700" fill="#e6edf3">Management</text>
+  <text x="40" y="242" font-family="'JetBrains Mono',monospace" font-size="15" fill="#3fb950">// rank what matters first</text>
+  <text x="40" y="320" font-family="'JetBrains Mono',monospace" font-size="13" fill="#8b949e">$ screenshot --soon</text>
+</svg>

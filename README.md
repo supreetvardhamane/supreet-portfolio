@@ -1,90 +1,49 @@
-# 🚀 supreet.dev
+# Supreet Vardhamane — Portfolio
 
-**18 • CS student • learning frontend & DSA • running @insightcoder**
+A fast, accessible, single-page portfolio. **No frameworks, no build step** — just
+hand-written HTML, CSS, and a sprinkle of vanilla JS. Designed to load instantly and
+host for free on GitHub Pages.
 
-![Dark Theme](https://img.shields.io/badge/theme-dark-black?style=flat-square)
-![Built with](https://img.shields.io/badge/built%20with-🫶%20vanilla%20js-blue?style=flat-square)
+## Stack
+- Semantic HTML5 + CSS custom properties (palette preserved from v1)
+- One web font (JetBrains Mono); body uses the system font stack — zero extra downloads
+- Inline SVG icons (no Font Awesome / icon CDN)
+- ~70 lines of dependency-free JS (mobile nav, scroll-spy, year)
 
----
+## Structure
+```
+index.html              # all content + sections
+css/style.css           # styles + palette tokens
+js/main.js              # progressive enhancement only
+assets/
+  favicon.svg
+  supreet-resume.pdf    # ← add this (see assets/README-resume.txt)
+  projects/*.svg        # placeholders — swap with real screenshots
+.nojekyll               # serve files as-is on GitHub Pages
+```
 
-## 👋 hey!
+## Edit your content
+All text lives in `index.html`. Update projects, skills, education, and achievements
+right in the markup — no tooling needed.
 
-This is my portfolio. Built it myself to practice HTML/CSS/JS.
+- **Résumé:** add `assets/supreet-resume.pdf`.
+- **Project images:** replace the SVGs in `assets/projects/` with 16:9 screenshots and
+  update each `<img src>` + `alt`.
 
-**No templates. No frameworks. No fake blockchain AI startup energy.**
+## Run locally
+Open `index.html` in a browser, or:
+```bash
+python3 -m http.server 8000   # then visit http://localhost:8000
+```
 
-Just me learning stuff and putting it online.
+## Deploy to GitHub Pages
+1. Push these files to your repo (e.g. `supreet-portfolio`).
+2. **Settings → Pages → Build and deployment → Source: Deploy from a branch.**
+3. Branch: `main`, folder: `/ (root)`. Save.
+4. Live at `https://<username>.github.io/<repo>/` in ~1 minute.
 
----
-
-## 📁 what's here
-supreet.dev/
-├── index.html # terminal intro thing
-├── about.html # who i am + what i suck at
-├── projects.html # stuff i actually built
-├── contact.html # dm me pls
-├── css/style.css # all dark theme
-├── js/script.js # just enough js
-└── assets/ # my face + project pics
-
-
----
-
-## 🛠️ built with
-
-- HTML • CSS • JS (vanilla only)
-- Inter + JetBrains Mono fonts
-- Font Awesome icons
-- GitHub Pages (free hosting ftw)
-
----
-
-## 🔥 currently breaking my brain on
-
-- DSA in JavaScript (linked lists send help)
-- C pointers (they finally make sense??)
-- CSS Grid (flexbox was easier tbh)
-- Linux tweaks (swappiness go brrr)
-
----
-
-## 📸 live site
-
-🔗 **[supreet.dev](https://supreetvardhamane.github.io/supreet.dev)**
-
-Screenshots coming soon™
-
----
-
-## 📬 find me wasting time here
-
-| platform | handle | what i post |
-|----------|--------|-------------|
-| 💻 GitHub | [@supreetvardhamane](https://github.com/supreetvardhamane) | code + this repo |
-| 📧 Email | supreetvardhamane@gmail.com | work/collab |
-
----
-
-## 🧠 why this exists
-
-Started coding because I was curious how computers work.
-
-Still curious. Still learning.
-
-This repo will look completely different in 6 months. That's the goal.
-
----
-
-## ⚡ cool people found this useful?
-
-**[⭐ Star the repo](https://github.com/supreetvardhamane/supreet.dev)** — it tells me I'm on the right track.
-
-Found a typo? [Open an issue](https://github.com/supreetvardhamane/supreet.dev/issues). I don't bite.
-
----
-
-<p align="center">
-  <code>1% better every day</code>
-  <br><br>
-  <sub>built in public • learning out loud • no cap</sub>
-</p>
+## Accessibility & performance
+- Skip-to-content link, semantic landmarks, one `<h1>`, labelled controls
+- Visible focus rings, keyboard-friendly nav, `prefers-reduced-motion` respected
+- Lazy-loaded images with fixed dimensions (no layout shift)
+- Static, render-blocking-free — fast even on slow connections

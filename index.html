@@ -1,173 +1,355 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>supreet · cs student</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Supreet Vardhamane — CS Student & Builder</title>
+  <meta name="description" content="Supreet Vardhamane — CS student & full-stack developer. I build full-stack web apps and practical tools (React, Node, Flask) and practise DSA daily. 1% better every day.">
+  <meta name="author" content="Supreet Vardhamane">
+  <meta name="theme-color" content="#0a0c10">
 
-    <!-- Fonts -->
-    <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap"
-        rel="stylesheet">
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Supreet Vardhamane — CS Student & Full-Stack Developer">
+  <meta property="og:description" content="Full-stack developer & CS student. React, Node, Flask. DSA daily, building in public. 1% better every day.">
+  <meta property="og:image" content="assets/projects/study-agent.svg">
 
-    <!-- Icons (only what you need) -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="canonical" href="https://supreetvardhamane.github.io/supreet-portfolio/">
 
-    <!-- CSS -->
-    <link rel="stylesheet" href="css/style.css">
+  <!-- Fonts: one mono family for personality; body uses zero-download system stack -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&display=swap">
+
+  <link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
-    <div class="container">
-        <!-- Navigation -->
-        <nav>
-            <div class="nav-container">
-                <a href="index.html" class="logo">~supreet/</a>
-                <div class="nav-links">
-                    <a href="index.html" class="active">home</a>
-                    <a href="projects.html">projects</a>
-                    <a href="about.html">about</a>
-                    <a href="contact.html">contact</a>
-                </div>
-            </div>
-        </nav>
+  <a class="skip-link" href="#main">Skip to content</a>
 
-        <!-- Hero - Terminal Style, Honest Introduction -->
-        <section class="hero">
-            <div class="hero-content">
-                <h1>
-                    <span class="terminal-text">$</span> whoami
-                </h1>
-                <div class="hero-text">
-                    <p><span>></span> Name: Supreet Vardhamane</p>
-                    <p><span>></span> Age: 19</p>
-                    <p><span>></span> Status: Computer Science Student</p>
-                    <p><span>></span> Currently: Practicing DSA & building small projects consistently</p>
-                    <p><span>></span> Debugging: LeetCode logic & messy JavaScript behavior</p>
-                    <p><span>></span> Philosophy: 1% better every day</p>
-                    <p style="margin-top: 1rem; color: #3fb950;">$ _</p>
-                </div>
-            </div>
-        </section>
+  <!-- ============ HEADER / NAV ============ -->
+  <header class="site-header" id="top">
+    <div class="container nav-bar">
+      <a class="brand" href="#top" aria-label="Home">
+        <span class="brand-prompt">~</span>supreet
+      </a>
 
-        <!-- Currently Learning (Real, Honest, Growth-Oriented) -->
-        <section style="margin: 3rem 0;">
-            <h2>📚 currently learning</h2>
-            <div
-                style="background: var(--bg-card); padding: 1.5rem; border-radius: var(--radius); border: 1px solid var(--border);">
-                <div class="learning-item">→ Data Structures & Algorithms (C++) — actively solving on LeetCode</div>
-                <div class="learning-item">→ Python — scripting, automation & exploring NumPy/Pandas</div>
-                <div class="learning-item">→ Advanced CSS (Flexbox & Grid) — building responsive layouts</div>
-                <div class="learning-item">→ Data Structures implementation (C) — linked lists, stacks, queues, trees
-                </div>
-
-                <div style="margin-top: 1rem;">
-                    <span style="color: var(--text-secondary);">next up: </span>
-                    <span class="tech-tag">Node.js</span>
-                    <span class="tech-tag">React</span>
-                    <span class="tech-tag">System Design</span>
-                </div>
-            </div>
-        </section>
-
-        <!-- Featured Projects (3 realistic projects) -->
-        <section style="margin: 3rem 0;">
-            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
-                <h2>🛠️ featured projects</h2>
-                <a href="projects.html" style="color: var(--accent); text-decoration: none; font-size: 0.9rem;">view all
-                    →</a>
-            </div>
-
-            <div class="projects-grid">
-                <!-- Project 1: DSA Visualizer (realistic) -->
-                <div class="project-card">
-                    <h3 class="project-title">♀️ Pragati-platform</h3>
-                    <p class="project-desc">
-                        Pragati is designed to help women re-enter the workforce after maternity or
-                        extended career breaks.
-                        It offers structured skill paths, progress tracking, mentorship opportunities, and a supportive
-                        community
-                    </p>
-                    <div class="project-tech">
-                        <span class="tech-tag">Backend</span>
-                        <span class="tech-tag">Mentorship</span>
-                        <span class="tech-tag">API</span>
-                    </div>
-                    <div class="project-links">
-                        <a href="https://github.com/supreetvardhamane/pragati-platform"><i class="fab fa-github"></i>
-                            code</a>
-                        <!-- <a href="#"><i class="fas fa-external-link-alt"></i>demo</a> -->
-                    </div>
-                </div>
-
-                <!-- Project 2: Linux Optimize Guide (real, niche, shows your interest) -->
-                <div class="project-card">
-                    <h3 class="project-title">🏛️ Smart Urban Management</h3>
-                    <p class="project-desc">
-                        A civic platform where citizens report issues like potholes or streetlight outages. It ranks
-                        complaints based on urgency, impact, and population density, helping cities fix the most
-                        critical problems first.
-                    </p>
-                    <div class="project-tech">
-                        <span class="tech-tag">Algorithms</span>
-                        <span class="tech-tag">Civic Tech</span>
-                    </div>
-                    <div class="project-links">
-                        <a href="https://github.com/supreetvardhamane/smart-urban-management"><i
-                                class="fab fa-github"></i> repo</a>
-                    </div>
-                </div>
-
-                <!-- Project 3: College Lab Work (shows CS fundamentals) -->
-                <div class="project-card">
-                    <h3 class="project-title">🛕 Parikrama</h3>
-                    <p class="project-desc">
-                        Parikrama is a smart temple crowd management system that reduces overcrowding and stampede risks
-                        by monitoring crowd density and suggesting safer visiting times and movement paths.
-                    </p>
-                    <div class="project-tech">
-                        <span class="tech-tag">Computer Vision</span>
-                        <span class="tech-tag">YOLOv8</span>
-                        <span class="tech-tag">Crowd Analysis</span>
-                    </div>
-                    <div class="project-links">
-                        <a href="https://github.com/supreetvardhamane/sih-project"><i class="fab fa-github"></i>
-                            repo</a>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Quick Skills Snapshot (honest levels) -->
-        <section style="margin: 3rem 0;">
-            <h2>⚡ current stack</h2>
-            <div style="display: flex; flex-wrap: wrap; gap: 0.75rem;">
-                <span class="skill-item">JavaScript (learning)</span>
-                <span class="skill-item">Bootstrap</span>
-                <span class="skill-item">C (data structures)</span>
-                <span class="skill-item">Python (basics)</span>
-                <span class="skill-item">Git/GitHub</span>
-                <span class="skill-item">Jenkins</span>
-                <span class="skill-item">Docker</span>
-                <span class="skill-item">HTML/CSS (building)</span>
-
-            </div>
-        </section>
-
-        <!-- Footer -->
-        <footer>
-            <div class="social-links">
-                <a href="https://github.com/supreetvardhamane" target="_blank"><i class="fab fa-github"></i></a>
-                <a href="mailto:supreetvardhamane@gmail.com"><i class="fas fa-envelope"></i></a>
-                <a href="https://www.linkedin.com/in/supreet-vardhamane/" target="_blank"><i
-                        class="fab fa-linkedin"></i></a>
-            </div>
-            <p>© 2025 Supreet Vardhamane · building in public · 1% better every day</p>
-        </footer>
+      <nav class="nav" aria-label="Primary">
+        <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="navMenu" aria-label="Toggle navigation menu">
+          <span class="nav-toggle-bar" aria-hidden="true"></span>
+          <span class="nav-toggle-bar" aria-hidden="true"></span>
+          <span class="nav-toggle-bar" aria-hidden="true"></span>
+        </button>
+        <ul class="nav-menu" id="navMenu">
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a class="btn btn-ghost nav-resume" href="assets/supreet-resume.pdf" download>Résumé</a></li>
+        </ul>
+      </nav>
     </div>
+  </header>
 
-    <script src="js/script.js"></script>
+  <main id="main">
+    <!-- ============ HERO ============ -->
+    <section class="hero container" aria-labelledby="hero-name">
+      <p class="eyebrow">$ whoami</p>
+      <h1 id="hero-name">Supreet Vardhamane</h1>
+      <p class="hero-role">Full-stack developer · CS student, building in public</p>
+      <p class="hero-intro">
+        B.E. Computer Science at <strong>SIT&nbsp;Tumakuru</strong>. I build
+        <strong>full-stack web apps</strong> and practical tools — from an AI study agent to
+        civic-tech platforms — with React, Node, and Flask, and practise DSA every day.
+        Big believer in getting <strong>1% better every day</strong>.
+      </p>
+
+      <p class="status-badge"><span class="status-dot" aria-hidden="true"></span> Open to internships &amp; collaboration</p>
+
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="#projects">View projects</a>
+        <a class="btn btn-ghost" href="assets/supreet-resume.pdf" download>
+          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m0 0 4-4m-4 4-4-4M5 21h14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          Download résumé
+        </a>
+        <a class="btn btn-link" href="mailto:supreetvardhamane@gmail.com">Get in touch →</a>
+      </div>
+    </section>
+
+    <!-- ============ ABOUT ============ -->
+    <section class="section container" id="about" aria-labelledby="about-h">
+      <p class="section-eyebrow">01 / about</p>
+      <h2 id="about-h">A student who ships</h2>
+      <div class="about-grid">
+        <div class="about-text">
+          <p>
+            I'm a 19-year-old engineering student who learns by building. Most days you'll find me
+            wiring up a full-stack app — a React or Vite frontend talking to a Node or Flask API —
+            debugging LeetCode logic, or untangling data structures in C++. I care about clean,
+            readable code and projects that solve a real, human problem.
+          </p>
+          <p>
+            Right now I'm going deep on DSA, system design, and the fundamentals — and shipping in
+            public so the progress stays honest.
+          </p>
+        </div>
+        <ul class="quick-facts" aria-label="Quick facts">
+          <li><span class="qf-key">location</span><span class="qf-val">Bangalore, India 🇮🇳</span></li>
+          <li><span class="qf-key">focus</span><span class="qf-val">Full-stack · DSA</span></li>
+          <li><span class="qf-key">degree</span><span class="qf-val">B.E. CSE, 2024–28</span></li>
+          <li><span class="qf-key">motto</span><span class="qf-val">1% better every day</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============ SKILLS ============ -->
+    <section class="section container" id="skills" aria-labelledby="skills-h">
+      <p class="section-eyebrow">02 / skills</p>
+      <h2 id="skills-h">What I work with</h2>
+      <div class="skills-grid">
+        <article class="skill-group">
+          <h3>Languages</h3>
+          <ul class="chips">
+            <li>Python</li><li>C++</li><li>JavaScript</li><li>HTML</li><li>CSS</li>
+          </ul>
+        </article>
+        <article class="skill-group">
+          <h3>Frameworks &amp; Libraries</h3>
+          <ul class="chips">
+            <li>React</li><li>Node.js</li><li>Express.js</li><li>Flask</li><li>Vite</li>
+          </ul>
+        </article>
+        <article class="skill-group">
+          <h3>Databases</h3>
+          <ul class="chips">
+            <li>MongoDB</li><li>PostgreSQL</li><li>SQLite</li>
+          </ul>
+        </article>
+        <article class="skill-group">
+          <h3>Tools &amp; Platforms</h3>
+          <ul class="chips">
+            <li>Git &amp; GitHub</li><li>VS Code</li><li>REST APIs</li><li>OpenAI API</li><li>Postman</li>
+          </ul>
+        </article>
+        <article class="skill-group">
+          <h3>Currently learning</h3>
+          <ul class="chips chips-muted">
+            <li>System Design</li><li>Advanced DSA</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <!-- ============ PROJECTS ============ -->
+    <section class="section container" id="projects" aria-labelledby="projects-h">
+      <p class="section-eyebrow">03 / projects</p>
+      <h2 id="projects-h">Things I've built</h2>
+
+      <div class="projects-grid">
+        <article class="project-card">
+          <a class="project-media" href="https://github.com/supreetvardhamane/autonomous-study-agent" aria-label="Autonomous Study Agent on GitHub">
+            <img src="assets/projects/study-agent.svg" width="640" height="360" loading="lazy" decoding="async" alt="Autonomous Study Agent preview">
+          </a>
+          <div class="project-body">
+            <h3 class="project-title">Autonomous Study Agent</h3>
+            <p class="project-desc">
+              An AI study planner that parses PDFs and generates personalised learning workflows via
+              an agentic loop (perceive → reason → plan → act). React frontend with flashcards, MCQ
+              tests, and a progress dashboard; an offline mock fallback keeps it 100% available
+              during API outages.
+            </p>
+            <ul class="tags" aria-label="Tech and topics">
+              <li>AI Agent</li><li>React</li><li>Node.js</li><li>OpenAI API</li>
+            </ul>
+            <div class="project-links">
+              <a href="https://github.com/supreetvardhamane/autonomous-study-agent">
+                <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 0 0-3.16 19.49c.5.09.68-.22.68-.48v-1.7c-2.78.6-3.37-1.34-3.37-1.34-.45-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.61.07-.61 1 .07 1.53 1.03 1.53 1.03.9 1.53 2.36 1.09 2.94.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.94 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.65 0 0 .84-.27 2.75 1.02a9.5 9.5 0 0 1 5 0c1.91-1.29 2.75-1.02 2.75-1.02.55 1.38.2 2.4.1 2.65.64.7 1.03 1.59 1.03 2.68 0 3.84-2.34 4.69-4.57 4.94.36.31.68.92.68 1.85v2.74c0 .27.18.58.69.48A10 10 0 0 0 12 2Z"/></svg>
+                Code
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <a class="project-media" href="https://github.com/supreetvardhamane/pragati-platform" aria-label="Pragati Platform on GitHub">
+            <img src="assets/projects/pragati.svg" width="640" height="360" loading="lazy" decoding="async" alt="Pragati Platform preview">
+          </a>
+          <div class="project-body">
+            <h3 class="project-title">Pragati — Career Re-Entry Platform</h3>
+            <p class="project-desc">
+              A full-stack platform helping women re-enter the workforce — mentorship matching,
+              structured learning modules, and an ML recommendation engine that surfaces skill gaps
+              and suggests upskilling. Secure auth with role-based access and progress dashboards.
+            </p>
+            <ul class="tags" aria-label="Tech and topics">
+              <li>Flask</li><li>Machine Learning</li><li>Full-Stack</li>
+            </ul>
+            <div class="project-links">
+              <a href="https://github.com/supreetvardhamane/pragati-platform">
+                <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 0 0-3.16 19.49c.5.09.68-.22.68-.48v-1.7c-2.78.6-3.37-1.34-3.37-1.34-.45-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.61.07-.61 1 .07 1.53 1.03 1.53 1.03.9 1.53 2.36 1.09 2.94.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.94 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.65 0 0 .84-.27 2.75 1.02a9.5 9.5 0 0 1 5 0c1.91-1.29 2.75-1.02 2.75-1.02.55 1.38.2 2.4.1 2.65.64.7 1.03 1.59 1.03 2.68 0 3.84-2.34 4.69-4.57 4.94.36.31.68.92.68 1.85v2.74c0 .27.18.58.69.48A10 10 0 0 0 12 2Z"/></svg>
+                Code
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <a class="project-media" href="https://github.com/supreetvardhamane/smart-urban-management" aria-label="Smart Urban Management on GitHub">
+            <img src="assets/projects/smart-urban.svg" width="640" height="360" loading="lazy" decoding="async" alt="Smart Urban Management preview">
+          </a>
+          <div class="project-body">
+            <h3 class="project-title">Smart Urban Management</h3>
+            <p class="project-desc">
+              A civic issue-reporting platform where citizens report and track urban problems —
+              potholes, drainage failures, streetlight outages — over a RESTful Flask API. A custom
+              priority-scoring algorithm weighs urgency, geographic impact, and population density to
+              optimise municipal response.
+            </p>
+            <ul class="tags" aria-label="Tech and topics">
+              <li>Flask</li><li>REST API</li><li>Algorithms</li><li>Civic Tech</li>
+            </ul>
+            <div class="project-links">
+              <a href="https://github.com/supreetvardhamane/smart-urban-management">
+                <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 0 0-3.16 19.49c.5.09.68-.22.68-.48v-1.7c-2.78.6-3.37-1.34-3.37-1.34-.45-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.61.07-.61 1 .07 1.53 1.03 1.53 1.03.9 1.53 2.36 1.09 2.94.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.94 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.65 0 0 .84-.27 2.75 1.02a9.5 9.5 0 0 1 5 0c1.91-1.29 2.75-1.02 2.75-1.02.55 1.38.2 2.4.1 2.65.64.7 1.03 1.59 1.03 2.68 0 3.84-2.34 4.69-4.57 4.94.36.31.68.92.68 1.85v2.74c0 .27.18.58.69.48A10 10 0 0 0 12 2Z"/></svg>
+                Code
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <a class="project-media" href="https://github.com/supreetvardhamane/sih-project" aria-label="Parikrama on GitHub">
+            <img src="assets/projects/parikrama.svg" width="640" height="360" loading="lazy" decoding="async" alt="Parikrama preview">
+          </a>
+          <div class="project-body">
+            <h3 class="project-title">Parikrama</h3>
+            <p class="project-desc">
+              A temple crowd-management system that monitors crowd density in real time to reduce
+              overcrowding and stampede risk during festivals.
+            </p>
+            <ul class="tags" aria-label="Tech and topics">
+              <li>Computer Vision</li><li>YOLOv8</li><li>Python</li>
+            </ul>
+            <div class="project-links">
+              <a href="https://github.com/supreetvardhamane/sih-project">
+                <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 0 0-3.16 19.49c.5.09.68-.22.68-.48v-1.7c-2.78.6-3.37-1.34-3.37-1.34-.45-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.61.07-.61 1 .07 1.53 1.03 1.53 1.03.9 1.53 2.36 1.09 2.94.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.94 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.65 0 0 .84-.27 2.75 1.02a9.5 9.5 0 0 1 5 0c1.91-1.29 2.75-1.02 2.75-1.02.55 1.38.2 2.4.1 2.65.64.7 1.03 1.59 1.03 2.68 0 3.84-2.34 4.69-4.57 4.94.36.31.68.92.68 1.85v2.74c0 .27.18.58.69.48A10 10 0 0 0 12 2Z"/></svg>
+                Code
+              </a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ============ EDUCATION ============ -->
+    <section class="section container" id="education" aria-labelledby="edu-h">
+      <p class="section-eyebrow">04 / education</p>
+      <h2 id="edu-h">Education</h2>
+      <article class="edu-card">
+        <div class="edu-main">
+          <h3>Siddaganga Institute of Technology (SIT)</h3>
+          <p class="edu-degree">B.E. in Computer Science &amp; Engineering</p>
+          <p class="edu-meta">Tumakuru, Karnataka</p>
+        </div>
+        <div class="edu-side">
+          <p class="edu-years">2024 – 2028</p>
+          <p class="edu-cgpa"><span>CGPA</span> 9.65<span class="edu-cgpa-max">/10</span></p>
+        </div>
+      </article>
+    </section>
+
+    <!-- ============ ACHIEVEMENTS ============ -->
+    <section class="section container" id="achievements" aria-labelledby="ach-h">
+      <p class="section-eyebrow">05 / achievements</p>
+      <h2 id="ach-h">Achievements &amp; learning</h2>
+      <div class="ach-grid">
+        <article class="ach-col">
+          <h3 class="ach-col-title">Hackathons</h3>
+          <ul class="ach-list">
+            <li>
+              <span class="ach-badge">Top 10</span>
+              <div>
+                <p class="ach-name">Finalist — Internal Smart India Hackathon 2024</p>
+                <p class="ach-org">Siddaganga Institute of Technology</p>
+              </div>
+            </li>
+            <li>
+              <span class="ach-badge">Shortlisted</span>
+              <div>
+                <p class="ach-name">IEEE WIE Code Hackathon 2024</p>
+                <p class="ach-org">Siddaganga Institute of Technology</p>
+              </div>
+            </li>
+          </ul>
+        </article>
+
+        <article class="ach-col">
+          <h3 class="ach-col-title">Certifications</h3>
+          <ul class="ach-list ach-list-plain">
+            <li><div><p class="ach-name">Operating Systems Basics</p><p class="ach-org">Cisco Networking Academy</p></div></li>
+            <li><div><p class="ach-name">Python (Basic)</p><p class="ach-org">HackerRank</p></div></li>
+          </ul>
+        </article>
+
+        <article class="ach-col">
+          <h3 class="ach-col-title">Courses</h3>
+          <ul class="ach-list ach-list-plain">
+            <li><div><p class="ach-name">Learn C++ — Beginner to Advanced</p><p class="ach-org">Abdul Bari</p></div></li>
+            <li><div><p class="ach-name">Complete Full-Stack Web Dev Bootcamp</p><p class="ach-org">Dr. Angela Yu</p></div></li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section class="section container" id="contact" aria-labelledby="contact-h">
+      <p class="section-eyebrow">06 / contact</p>
+      <h2 id="contact-h">Let's talk</h2>
+      <p class="contact-lead">
+        Open to internships, project collaboration, or just a good conversation about code.
+        The fastest way to reach me is email.
+      </p>
+      <div class="contact-grid">
+        <a class="contact-card" href="mailto:supreetvardhamane@gmail.com">
+          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" d="M3 6h18v12H3z"/><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="m3 7 9 6 9-6"/></svg>
+          <span class="contact-key">Email</span>
+          <span class="contact-val">supreetvardhamane@gmail.com</span>
+        </a>
+        <a class="contact-card" href="tel:+919035949777">
+          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M5 4h3l2 5-2.5 1.5a11 11 0 0 0 5 5L19 18l-1 3a16 16 0 0 1-13-13Z"/></svg>
+          <span class="contact-key">Phone</span>
+          <span class="contact-val">+91 90359 49777</span>
+        </a>
+        <a class="contact-card" href="https://github.com/supreetvardhamane">
+          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 0 0-3.16 19.49c.5.09.68-.22.68-.48v-1.7c-2.78.6-3.37-1.34-3.37-1.34-.45-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.61.07-.61 1 .07 1.53 1.03 1.53 1.03.9 1.53 2.36 1.09 2.94.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.94 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.65 0 0 .84-.27 2.75 1.02a9.5 9.5 0 0 1 5 0c1.91-1.29 2.75-1.02 2.75-1.02.55 1.38.2 2.4.1 2.65.64.7 1.03 1.59 1.03 2.68 0 3.84-2.34 4.69-4.57 4.94.36.31.68.92.68 1.85v2.74c0 .27.18.58.69.48A10 10 0 0 0 12 2Z"/></svg>
+          <span class="contact-key">GitHub</span>
+          <span class="contact-val">@supreetvardhamane</span>
+        </a>
+        <a class="contact-card" href="https://linkedin.com/in/supreet-vardhamane/">
+          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14ZM8.34 18.34V9.94H5.56v8.4h2.78ZM6.95 8.7a1.61 1.61 0 1 0 0-3.22 1.61 1.61 0 0 0 0 3.22Zm11.39 9.64v-4.6c0-2.46-1.31-3.6-3.06-3.6a2.64 2.64 0 0 0-2.39 1.31v-1.12H10.1v8.4h2.78v-4.66c0-1.23.23-2.42 1.76-2.42 1.5 0 1.52 1.4 1.52 2.5v4.58h2.78Z"/></svg>
+          <span class="contact-key">LinkedIn</span>
+          <span class="contact-val">supreet-vardhamane</span>
+        </a>
+        <a class="contact-card" href="https://leetcode.com/u/supreet_vardhamane/">
+          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="m13.5 4-7 8 7 8M9 12h11"/></svg>
+          <span class="contact-key">LeetCode</span>
+          <span class="contact-val">supreet_vardhamane</span>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p class="footer-note">
+        <span class="brand-prompt">~</span>supreet · building in public · 1% better every day
+      </p>
+      <p class="footer-copy">© <span id="year">2026</span> Supreet Vardhamane</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js" defer></script>
 </body>
-
 </html>

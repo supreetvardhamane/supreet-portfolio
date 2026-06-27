@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" role="img" aria-label="Supreet Vardhamane">
+  <rect width="32" height="32" rx="7" fill="#0a0c10"/>
+  <rect x="0.5" y="0.5" width="31" height="31" rx="6.5" fill="none" stroke="#2d333b"/>
+  <text x="16" y="22" font-family="'JetBrains Mono','Courier New',monospace" font-size="17" font-weight="700" text-anchor="middle" fill="#58a6ff">~s</text>
+</svg>
