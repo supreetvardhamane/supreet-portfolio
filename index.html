@@ -2,193 +2,192 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Supreet Vardhamane — CS Student & Builder</title>
-  <meta name="description" content="Supreet Vardhamane — CS student & full-stack developer. I build full-stack web apps and practical tools (React, Node, Flask) and practise DSA daily. 1% better every day.">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Supreet Vardhamane — Full-Stack Developer & Problem Solver</title>
+  <meta name="description" content="Supreet Vardhamane is a Computer Science student and full-stack developer passionate about modern web technologies and solving Data Structures & Algorithms problems. Explore projects, skills, achievements, and contact info.">
   <meta name="author" content="Supreet Vardhamane">
-  <meta name="theme-color" content="#0a0c10">
+  <meta name="theme-color" content="#060910">
 
-  <!-- Open Graph -->
   <meta property="og:type" content="website">
-  <meta property="og:title" content="Supreet Vardhamane — CS Student & Full-Stack Developer">
-  <meta property="og:description" content="Full-stack developer & CS student. React, Node, Flask. DSA daily, building in public. 1% better every day.">
+  <meta property="og:title" content="Supreet Vardhamane — Full-Stack Developer & Problem Solver">
+  <meta property="og:description" content="CS student & full-stack developer. React, Node, Flask. DSA daily, building in public.">
   <meta property="og:image" content="assets/projects/study-agent.svg">
 
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <link rel="canonical" href="https://supreetvardhamane.github.io/supreet-portfolio/">
 
-  <!-- Fonts: one mono family for personality; body uses zero-download system stack -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&display=swap">
-
   <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
+<body data-nav>
   <a class="skip-link" href="#main">Skip to content</a>
 
-  <!-- ============ HEADER / NAV ============ -->
+  <!-- ===== top header (desktop) ===== -->
   <header class="site-header" id="top">
     <div class="container nav-bar">
-      <a class="brand" href="#top" aria-label="Home">
-        <span class="brand-prompt">~</span>supreet
-      </a>
-
-      <nav class="nav" aria-label="Primary">
-        <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="navMenu" aria-label="Toggle navigation menu">
-          <span class="nav-toggle-bar" aria-hidden="true"></span>
-          <span class="nav-toggle-bar" aria-hidden="true"></span>
-          <span class="nav-toggle-bar" aria-hidden="true"></span>
-        </button>
-        <ul class="nav-menu" id="navMenu">
-          <li><a href="#about">About</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#education">Education</a></li>
-          <li><a href="#contact">Contact</a></li>
-          <li><a class="btn btn-ghost nav-resume" href="assets/supreet-resume.pdf" download>Résumé</a></li>
+      <a class="brand" href="#top" aria-label="Home"><span class="prompt">~</span>supreet<span class="cur">_</span></a>
+      <nav class="topnav" aria-label="Primary">
+        <ul>
+          <li><a class="nav-link" href="#about">about</a></li>
+          <li><a class="nav-link" href="#skills">skills</a></li>
+          <li><a class="nav-link" href="#projects">projects</a></li>
+          <li><a class="nav-link" href="#education">education</a></li>
+          <li><a class="nav-link" href="#contact">contact</a></li>
+          <li><a class="btn btn-ghost btn-resume" href="assets/supreet-resume.pdf" download>Resume</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
   <main id="main">
-    <!-- ============ HERO ============ -->
+    <!-- ===== HERO (terminal window) ===== -->
     <section class="hero container" aria-labelledby="hero-name">
-      <p class="eyebrow">$ whoami</p>
-      <h1 id="hero-name">Supreet Vardhamane</h1>
-      <p class="hero-role">Full-stack developer · CS student, building in public</p>
-      <p class="hero-intro">
-        B.E. Computer Science at <strong>SIT&nbsp;Tumakuru</strong>. I build
-        <strong>full-stack web apps</strong> and practical tools — from an AI study agent to
-        civic-tech platforms — with React, Node, and Flask, and practise DSA every day.
-        Big believer in getting <strong>1% better every day</strong>.
-      </p>
-
-      <p class="status-badge"><span class="status-dot" aria-hidden="true"></span> Open to internships &amp; collaboration</p>
-
-      <div class="hero-actions">
-        <a class="btn btn-primary" href="#projects">View projects</a>
-        <a class="btn btn-ghost" href="assets/supreet-resume.pdf" download>
-          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m0 0 4-4m-4 4-4-4M5 21h14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-          Download résumé
-        </a>
-        <a class="btn btn-link" href="mailto:supreetvardhamane@gmail.com">Get in touch →</a>
+      <div class="terminal">
+        <div class="term-bar" aria-hidden="true">
+          <span class="term-dot r"></span><span class="term-dot y"></span><span class="term-dot g"></span>
+          <span class="term-title">supreet@portfolio: ~</span>
+        </div>
+        <div class="term-body">
+          <p class="line" aria-hidden="true"><span class="usr">supreet@portfolio</span>:<span class="path">~</span>$ whoami</p>
+          <h1 id="hero-name">Supreet Vardhamane</h1>
+          <p class="hero-role">Full-Stack Developer &amp; Problem Solver</p>
+          <p class="line" aria-hidden="true" style="margin-top:1.1rem"><span class="usr">supreet@portfolio</span>:<span class="path">~</span>$ cat intro.txt</p>
+          <p class="hero-sub">
+            I build modern, responsive, and user-focused web applications — a React/Vite frontend
+            talking to a <strong>Node</strong> or <strong>Flask</strong> backend — while continuously
+            sharpening my problem-solving through <strong>Data Structures &amp; Algorithms</strong>.
+          </p>
+          <p class="badge"><span class="dot" aria-hidden="true"></span> Open to Opportunities · Internships 2027</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#projects">View projects</a>
+            <a class="btn btn-ghost" href="assets/supreet-resume.pdf" download>
+              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m0 0 4-4m-4 4-4-4M5 21h14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              Download Resume
+            </a>
+            <a class="btn-link" href="mailto:supreetvardhamane@gmail.com">Get in touch →</a>
+          </div>
+          <p class="prompt-end" aria-hidden="true"><span class="usr">supreet@portfolio</span>:<span class="path">~</span>$ <span class="cursor"></span></p>
+        </div>
       </div>
     </section>
 
-    <!-- ============ ABOUT ============ -->
+    <!-- ===== CURRENT FOCUS ===== -->
+    <section class="section container" id="focus" aria-labelledby="focus-h">
+      <p class="cmd"><span class="usr">supreet@portfolio</span>:<span class="path">~</span><span class="sym">$</span> <span class="arg">cat focus.log</span></p>
+      <h2 id="focus-h">Current Focus</h2>
+      <div class="focus-grid">
+        <div class="focus-item"><span class="ic" aria-hidden="true">🚀</span><p><span class="k">building</span>Modern full-stack web applications</p></div>
+        <div class="focus-item"><span class="ic" aria-hidden="true">🧠</span><p><span class="k">practising</span>Data Structures &amp; Algorithms, daily</p></div>
+        <div class="focus-item"><span class="ic" aria-hidden="true">📚</span><p><span class="k">learning</span>System Design &amp; Backend Development</p></div>
+        <div class="focus-item"><span class="ic" aria-hidden="true">💼</span><p><span class="k">preparing</span>Software Engineering internships, 2027</p></div>
+      </div>
+    </section>
+
+    <!-- ===== ABOUT ===== -->
     <section class="section container" id="about" aria-labelledby="about-h">
-      <p class="section-eyebrow">01 / about</p>
-      <h2 id="about-h">A student who ships</h2>
+      <p class="cmd"><span class="usr">supreet@portfolio</span>:<span class="path">~</span><span class="sym">$</span> <span class="arg">cat about.md</span></p>
+      <h2 id="about-h">About me</h2>
       <div class="about-grid">
         <div class="about-text">
           <p>
-            I'm a 19-year-old engineering student who learns by building. Most days you'll find me
-            wiring up a full-stack app — a React or Vite frontend talking to a Node or Flask API —
-            debugging LeetCode logic, or untangling data structures in C++. I care about clean,
-            readable code and projects that solve a real, human problem.
+            I'm <strong>Supreet Vardhamane</strong>, a Computer Science student who loves building
+            modern web applications and solving challenging programming problems. I enjoy turning
+            ideas into interactive, responsive, full-stack products and care about clean, readable
+            code that solves a real, human problem.
           </p>
           <p>
-            Right now I'm going deep on DSA, system design, and the fundamentals — and shipping in
-            public so the progress stays honest.
+            Alongside web development I'm constantly sharpening my Data Structures &amp; Algorithms
+            and picking up new technologies on the way to becoming a well-rounded software engineer.
+            When I'm not coding, you'll usually find me grinding LeetCode, taking online courses, or
+            shipping a new personal project — building in public so the progress stays honest.
           </p>
         </div>
-        <ul class="quick-facts" aria-label="Quick facts">
-          <li><span class="qf-key">location</span><span class="qf-val">Bangalore, India 🇮🇳</span></li>
-          <li><span class="qf-key">focus</span><span class="qf-val">Full-stack · DSA</span></li>
-          <li><span class="qf-key">degree</span><span class="qf-val">B.E. CSE, 2024–28</span></li>
-          <li><span class="qf-key">motto</span><span class="qf-val">1% better every day</span></li>
+        <ul class="facts" aria-label="Quick facts">
+          <li><span class="k">location</span><span class="v">Bangalore, India 🇮🇳</span></li>
+          <li><span class="k">role</span><span class="v">Full-stack · DSA</span></li>
+          <li><span class="k">degree</span><span class="v">B.E. CSE, 2024–28</span></li>
+          <li><span class="k">status</span><span class="v">Open to internships</span></li>
+          <li><span class="k">motto</span><span class="v">1% better every day</span></li>
         </ul>
       </div>
     </section>
 
-    <!-- ============ SKILLS ============ -->
-    <section class="section container" id="skills" aria-labelledby="skills-h">
-      <p class="section-eyebrow">02 / skills</p>
-      <h2 id="skills-h">What I work with</h2>
-      <div class="skills-grid">
-        <article class="skill-group">
-          <h3>Languages</h3>
-          <ul class="chips">
-            <li>Python</li><li>C++</li><li>JavaScript</li><li>HTML</li><li>CSS</li>
-          </ul>
-        </article>
-        <article class="skill-group">
-          <h3>Frameworks &amp; Libraries</h3>
-          <ul class="chips">
-            <li>React</li><li>Node.js</li><li>Express.js</li><li>Flask</li><li>Vite</li>
-          </ul>
-        </article>
-        <article class="skill-group">
-          <h3>Databases</h3>
-          <ul class="chips">
-            <li>MongoDB</li><li>PostgreSQL</li><li>SQLite</li>
-          </ul>
-        </article>
-        <article class="skill-group">
-          <h3>Tools &amp; Platforms</h3>
-          <ul class="chips">
-            <li>Git &amp; GitHub</li><li>VS Code</li><li>REST APIs</li><li>OpenAI API</li><li>Postman</li>
-          </ul>
-        </article>
-        <article class="skill-group">
-          <h3>Currently learning</h3>
-          <ul class="chips chips-muted">
-            <li>System Design</li><li>Advanced DSA</li>
-          </ul>
-        </article>
+    <!-- ===== STATS ===== -->
+    <section class="section container" id="stats" aria-labelledby="stats-h">
+      <p class="cmd"><span class="usr">supreet@portfolio</span>:<span class="path">~</span><span class="sym">$</span> <span class="arg">./stats.sh</span></p>
+      <h2 id="stats-h" class="sr-only">By the numbers</h2>
+      <div class="stats-grid">
+        <div class="stat"><p class="n">50+</p><p class="l">LeetCode solved</p></div>
+        <div class="stat"><p class="n">6+</p><p class="l">Projects built</p></div>
+        <div class="stat"><p class="n">6</p><p class="l">Core technologies</p></div>
+        <div class="stat"><p class="n">100+</p><p class="l">Hours learning</p></div>
       </div>
     </section>
 
-    <!-- ============ PROJECTS ============ -->
-    <section class="section container" id="projects" aria-labelledby="projects-h">
-      <p class="section-eyebrow">03 / projects</p>
-      <h2 id="projects-h">Things I've built</h2>
+    <!-- ===== SKILLS ===== -->
+    <section class="section container" id="skills" aria-labelledby="skills-h">
+      <p class="cmd"><span class="usr">supreet@portfolio</span>:<span class="path">~</span><span class="sym">$</span> <span class="arg">ls skills/</span></p>
+      <h2 id="skills-h">Skills</h2>
+      <div class="skills-grid">
+        <article class="skill-group"><h3>languages</h3><ul class="chips"><li>Python</li><li>C++</li><li>JavaScript</li><li>HTML</li><li>CSS</li></ul></article>
+        <article class="skill-group"><h3>frameworks</h3><ul class="chips"><li>React</li><li>Node.js</li><li>Express.js</li><li>Flask</li><li>Vite</li></ul></article>
+        <article class="skill-group"><h3>databases</h3><ul class="chips"><li>MongoDB</li><li>PostgreSQL</li><li>SQLite</li></ul></article>
+        <article class="skill-group"><h3>tools</h3><ul class="chips"><li>Git &amp; GitHub</li><li>VS Code</li><li>REST APIs</li><li>OpenAI API</li><li>Postman</li></ul></article>
+        <article class="skill-group"><h3>learning</h3><ul class="chips chips-muted"><li>Advanced DSA</li><li>System Design</li><li>Next.js</li><li>Backend Dev</li><li>Operating Systems</li></ul></article>
+      </div>
+    </section>
 
+    <!-- ===== PROJECTS ===== -->
+    <section class="section container" id="projects" aria-labelledby="projects-h">
+      <p class="cmd"><span class="usr">supreet@portfolio</span>:<span class="path">~</span><span class="sym">$</span> <span class="arg">ls projects/ --featured</span></p>
+      <h2 id="projects-h">Projects</h2>
+
+      <!-- featured -->
+      <article class="featured">
+        <a class="f-media" href="https://github.com/supreetvardhamane/autonomous-study-agent" aria-label="Autonomous Study Agent on GitHub">
+          <img src="assets/projects/study-agent.svg" width="640" height="360" loading="lazy" decoding="async" alt="Autonomous Study Agent preview">
+        </a>
+        <div class="f-body">
+          <p class="f-tag">★ featured project</p>
+          <h3>Autonomous Study Agent</h3>
+          <p class="f-desc">
+            A full-stack AI study planner that turns dense PDFs into structured, personalised
+            learning workflows — built with a focus on performance, reliability, and a clean UX.
+          </p>
+          <dl class="f-list">
+            <div><dt>Problem solved</dt><dd>Students drown in PDFs and notes with no structured way to revise.</dd></div>
+            <div><dt>Key features</dt><dd>PDF parsing, an agentic planning loop (perceive → reason → plan → act), auto-generated flashcards &amp; MCQ tests, and a progress dashboard.</dd></div>
+            <div><dt>Challenges faced</dt><dd>Keeping the app fully usable when the OpenAI API was unavailable.</dd></div>
+            <div><dt>What I learned</dt><dd>Designing agentic loops and building graceful offline fallbacks for 100% uptime.</dd></div>
+          </dl>
+          <ul class="f-stack" aria-label="Tech stack">
+            <li>React</li><li>Vite</li><li>Node.js</li><li>Express</li><li>MongoDB</li><li>OpenAI API</li>
+          </ul>
+          <div class="project-links">
+            <a href="https://github.com/supreetvardhamane/autonomous-study-agent">
+              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 0 0-3.16 19.49c.5.09.68-.22.68-.48v-1.7c-2.78.6-3.37-1.34-3.37-1.34-.45-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.61.07-.61 1 .07 1.53 1.03 1.53 1.03.9 1.53 2.36 1.09 2.94.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.94 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.65 0 0 .84-.27 2.75 1.02a9.5 9.5 0 0 1 5 0c1.91-1.29 2.75-1.02 2.75-1.02.55 1.38.2 2.4.1 2.65.64.7 1.03 1.59 1.03 2.68 0 3.84-2.34 4.69-4.57 4.94.36.31.68.92.68 1.85v2.74c0 .27.18.58.69.48A10 10 0 0 0 12 2Z"/></svg>
+              View Source
+            </a>
+          </div>
+        </div>
+      </article>
+
+      <!-- grid -->
       <div class="projects-grid">
         <article class="project-card">
-          <a class="project-media" href="https://github.com/supreetvardhamane/autonomous-study-agent" aria-label="Autonomous Study Agent on GitHub">
-            <img src="assets/projects/study-agent.svg" width="640" height="360" loading="lazy" decoding="async" alt="Autonomous Study Agent preview">
+          <a class="project-media" href="https://github.com/supreetvardhamane/pragati-platform" aria-label="Pragati on GitHub">
+            <img src="assets/projects/pragati.svg" width="640" height="360" loading="lazy" decoding="async" alt="Pragati preview">
           </a>
           <div class="project-body">
-            <h3 class="project-title">Autonomous Study Agent</h3>
-            <p class="project-desc">
-              An AI study planner that parses PDFs and generates personalised learning workflows via
-              an agentic loop (perceive → reason → plan → act). React frontend with flashcards, MCQ
-              tests, and a progress dashboard; an offline mock fallback keeps it 100% available
-              during API outages.
-            </p>
-            <ul class="tags" aria-label="Tech and topics">
-              <li>AI Agent</li><li>React</li><li>Node.js</li><li>OpenAI API</li>
-            </ul>
-            <div class="project-links">
-              <a href="https://github.com/supreetvardhamane/autonomous-study-agent">
-                <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 0 0-3.16 19.49c.5.09.68-.22.68-.48v-1.7c-2.78.6-3.37-1.34-3.37-1.34-.45-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.61.07-.61 1 .07 1.53 1.03 1.53 1.03.9 1.53 2.36 1.09 2.94.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.94 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.65 0 0 .84-.27 2.75 1.02a9.5 9.5 0 0 1 5 0c1.91-1.29 2.75-1.02 2.75-1.02.55 1.38.2 2.4.1 2.65.64.7 1.03 1.59 1.03 2.68 0 3.84-2.34 4.69-4.57 4.94.36.31.68.92.68 1.85v2.74c0 .27.18.58.69.48A10 10 0 0 0 12 2Z"/></svg>
-                Code
-              </a>
-            </div>
-          </div>
-        </article>
-
-        <article class="project-card">
-          <a class="project-media" href="https://github.com/supreetvardhamane/pragati-platform" aria-label="Pragati Platform on GitHub">
-            <img src="assets/projects/pragati.svg" width="640" height="360" loading="lazy" decoding="async" alt="Pragati Platform preview">
-          </a>
-          <div class="project-body">
-            <h3 class="project-title">Pragati — Career Re-Entry Platform</h3>
-            <p class="project-desc">
-              A full-stack platform helping women re-enter the workforce — mentorship matching,
-              structured learning modules, and an ML recommendation engine that surfaces skill gaps
-              and suggests upskilling. Secure auth with role-based access and progress dashboards.
-            </p>
-            <ul class="tags" aria-label="Tech and topics">
-              <li>Flask</li><li>Machine Learning</li><li>Full-Stack</li>
-            </ul>
+            <h3 class="project-title">Pragati — Career Re-Entry</h3>
+            <p class="project-desc">A full-stack platform helping women re-enter the workforce — mentorship matching, structured learning modules, and an ML recommendation engine that surfaces skill gaps. Secure auth with role-based access and progress dashboards.</p>
+            <ul class="tags" aria-label="Tech"><li>Flask</li><li>Machine Learning</li><li>Full-Stack</li></ul>
             <div class="project-links">
               <a href="https://github.com/supreetvardhamane/pragati-platform">
                 <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 0 0-3.16 19.49c.5.09.68-.22.68-.48v-1.7c-2.78.6-3.37-1.34-3.37-1.34-.45-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.61.07-.61 1 .07 1.53 1.03 1.53 1.03.9 1.53 2.36 1.09 2.94.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.94 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.65 0 0 .84-.27 2.75 1.02a9.5 9.5 0 0 1 5 0c1.91-1.29 2.75-1.02 2.75-1.02.55 1.38.2 2.4.1 2.65.64.7 1.03 1.59 1.03 2.68 0 3.84-2.34 4.69-4.57 4.94.36.31.68.92.68 1.85v2.74c0 .27.18.58.69.48A10 10 0 0 0 12 2Z"/></svg>
-                Code
+                View Source
               </a>
             </div>
           </div>
@@ -200,19 +199,12 @@
           </a>
           <div class="project-body">
             <h3 class="project-title">Smart Urban Management</h3>
-            <p class="project-desc">
-              A civic issue-reporting platform where citizens report and track urban problems —
-              potholes, drainage failures, streetlight outages — over a RESTful Flask API. A custom
-              priority-scoring algorithm weighs urgency, geographic impact, and population density to
-              optimise municipal response.
-            </p>
-            <ul class="tags" aria-label="Tech and topics">
-              <li>Flask</li><li>REST API</li><li>Algorithms</li><li>Civic Tech</li>
-            </ul>
+            <p class="project-desc">A civic issue-reporting platform where citizens report and track urban problems — potholes, drainage, streetlights — over a RESTful Flask API. A custom priority-scoring algorithm weighs urgency, geographic impact, and population density.</p>
+            <ul class="tags" aria-label="Tech"><li>Flask</li><li>REST API</li><li>Algorithms</li><li>Civic Tech</li></ul>
             <div class="project-links">
               <a href="https://github.com/supreetvardhamane/smart-urban-management">
                 <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 0 0-3.16 19.49c.5.09.68-.22.68-.48v-1.7c-2.78.6-3.37-1.34-3.37-1.34-.45-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.61.07-.61 1 .07 1.53 1.03 1.53 1.03.9 1.53 2.36 1.09 2.94.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.94 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.65 0 0 .84-.27 2.75 1.02a9.5 9.5 0 0 1 5 0c1.91-1.29 2.75-1.02 2.75-1.02.55 1.38.2 2.4.1 2.65.64.7 1.03 1.59 1.03 2.68 0 3.84-2.34 4.69-4.57 4.94.36.31.68.92.68 1.85v2.74c0 .27.18.58.69.48A10 10 0 0 0 12 2Z"/></svg>
-                Code
+                View Source
               </a>
             </div>
           </div>
@@ -224,29 +216,28 @@
           </a>
           <div class="project-body">
             <h3 class="project-title">Parikrama</h3>
-            <p class="project-desc">
-              A temple crowd-management system that monitors crowd density in real time to reduce
-              overcrowding and stampede risk during festivals.
-            </p>
-            <ul class="tags" aria-label="Tech and topics">
-              <li>Computer Vision</li><li>YOLOv8</li><li>Python</li>
-            </ul>
+            <p class="project-desc">A temple crowd-management system that monitors crowd density in real time with computer vision to reduce overcrowding and stampede risk during festivals.</p>
+            <ul class="tags" aria-label="Tech"><li>Computer Vision</li><li>YOLOv8</li><li>Python</li></ul>
             <div class="project-links">
               <a href="https://github.com/supreetvardhamane/sih-project">
                 <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 0 0-3.16 19.49c.5.09.68-.22.68-.48v-1.7c-2.78.6-3.37-1.34-3.37-1.34-.45-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.61.07-.61 1 .07 1.53 1.03 1.53 1.03.9 1.53 2.36 1.09 2.94.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.94 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.65 0 0 .84-.27 2.75 1.02a9.5 9.5 0 0 1 5 0c1.91-1.29 2.75-1.02 2.75-1.02.55 1.38.2 2.4.1 2.65.64.7 1.03 1.59 1.03 2.68 0 3.84-2.34 4.69-4.57 4.94.36.31.68.92.68 1.85v2.74c0 .27.18.58.69.48A10 10 0 0 0 12 2Z"/></svg>
-                Code
+                View Source
               </a>
             </div>
           </div>
         </article>
       </div>
+
+      <p class="lead" style="margin-top:1.5rem">
+        <a href="https://github.com/supreetvardhamane">More on GitHub →</a> — explore repositories for more experiments, learning projects, and open-source work.
+      </p>
     </section>
 
-    <!-- ============ EDUCATION ============ -->
+    <!-- ===== EDUCATION ===== -->
     <section class="section container" id="education" aria-labelledby="edu-h">
-      <p class="section-eyebrow">04 / education</p>
+      <p class="cmd"><span class="usr">supreet@portfolio</span>:<span class="path">~</span><span class="sym">$</span> <span class="arg">cat education.txt</span></p>
       <h2 id="edu-h">Education</h2>
-      <article class="edu-card">
+      <article class="panel edu-card">
         <div class="edu-main">
           <h3>Siddaganga Institute of Technology (SIT)</h3>
           <p class="edu-degree">B.E. in Computer Science &amp; Engineering</p>
@@ -254,36 +245,37 @@
         </div>
         <div class="edu-side">
           <p class="edu-years">2024 – 2028</p>
-          <p class="edu-cgpa"><span>CGPA</span> 9.65<span class="edu-cgpa-max">/10</span></p>
+          <p class="edu-cgpa">9.65<span class="max">/10</span></p>
         </div>
       </article>
     </section>
 
-    <!-- ============ ACHIEVEMENTS ============ -->
+    <!-- ===== EXPERIENCE ===== -->
+    <section class="section container" id="experience" aria-labelledby="exp-h">
+      <p class="cmd"><span class="usr">supreet@portfolio</span>:<span class="path">~</span><span class="sym">$</span> <span class="arg">cat experience.txt</span></p>
+      <h2 id="exp-h">Experience</h2>
+      <article class="panel exp">
+        <h3>Open Source &amp; Personal Development</h3>
+        <p>
+          Actively building personal projects, contributing on GitHub, solving algorithmic problems,
+          and continuously learning modern software-development practices — shipping in public and
+          treating every project as a chance to get a little better.
+        </p>
+      </article>
+    </section>
+
+    <!-- ===== ACHIEVEMENTS ===== -->
     <section class="section container" id="achievements" aria-labelledby="ach-h">
-      <p class="section-eyebrow">05 / achievements</p>
+      <p class="cmd"><span class="usr">supreet@portfolio</span>:<span class="path">~</span><span class="sym">$</span> <span class="arg">ls achievements/</span></p>
       <h2 id="ach-h">Achievements &amp; learning</h2>
       <div class="ach-grid">
         <article class="ach-col">
           <h3 class="ach-col-title">Hackathons</h3>
           <ul class="ach-list">
-            <li>
-              <span class="ach-badge">Top 10</span>
-              <div>
-                <p class="ach-name">Finalist — Internal Smart India Hackathon 2024</p>
-                <p class="ach-org">Siddaganga Institute of Technology</p>
-              </div>
-            </li>
-            <li>
-              <span class="ach-badge">Shortlisted</span>
-              <div>
-                <p class="ach-name">IEEE WIE Code Hackathon 2024</p>
-                <p class="ach-org">Siddaganga Institute of Technology</p>
-              </div>
-            </li>
+            <li><span class="ach-badge">Top 10</span><div><p class="ach-name">Finalist — Internal Smart India Hackathon 2024</p><p class="ach-org">Siddaganga Institute of Technology</p></div></li>
+            <li><span class="ach-badge">Shortlisted</span><div><p class="ach-name">IEEE WIE Code Hackathon 2024</p><p class="ach-org">Siddaganga Institute of Technology</p></div></li>
           </ul>
         </article>
-
         <article class="ach-col">
           <h3 class="ach-col-title">Certifications</h3>
           <ul class="ach-list ach-list-plain">
@@ -291,7 +283,6 @@
             <li><div><p class="ach-name">Python (Basic)</p><p class="ach-org">HackerRank</p></div></li>
           </ul>
         </article>
-
         <article class="ach-col">
           <h3 class="ach-col-title">Courses</h3>
           <ul class="ach-list ach-list-plain">
@@ -302,53 +293,62 @@
       </div>
     </section>
 
-    <!-- ============ CONTACT ============ -->
+    <!-- ===== CONTACT ===== -->
     <section class="section container" id="contact" aria-labelledby="contact-h">
-      <p class="section-eyebrow">06 / contact</p>
-      <h2 id="contact-h">Let's talk</h2>
-      <p class="contact-lead">
-        Open to internships, project collaboration, or just a good conversation about code.
-        The fastest way to reach me is email.
-      </p>
-      <div class="contact-grid">
-        <a class="contact-card" href="mailto:supreetvardhamane@gmail.com">
-          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" d="M3 6h18v12H3z"/><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="m3 7 9 6 9-6"/></svg>
-          <span class="contact-key">Email</span>
-          <span class="contact-val">supreetvardhamane@gmail.com</span>
-        </a>
-        <a class="contact-card" href="tel:+919035949777">
-          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M5 4h3l2 5-2.5 1.5a11 11 0 0 0 5 5L19 18l-1 3a16 16 0 0 1-13-13Z"/></svg>
-          <span class="contact-key">Phone</span>
-          <span class="contact-val">+91 90359 49777</span>
-        </a>
-        <a class="contact-card" href="https://github.com/supreetvardhamane">
-          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 0 0-3.16 19.49c.5.09.68-.22.68-.48v-1.7c-2.78.6-3.37-1.34-3.37-1.34-.45-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.61.07-.61 1 .07 1.53 1.03 1.53 1.03.9 1.53 2.36 1.09 2.94.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.94 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.65 0 0 .84-.27 2.75 1.02a9.5 9.5 0 0 1 5 0c1.91-1.29 2.75-1.02 2.75-1.02.55 1.38.2 2.4.1 2.65.64.7 1.03 1.59 1.03 2.68 0 3.84-2.34 4.69-4.57 4.94.36.31.68.92.68 1.85v2.74c0 .27.18.58.69.48A10 10 0 0 0 12 2Z"/></svg>
-          <span class="contact-key">GitHub</span>
-          <span class="contact-val">@supreetvardhamane</span>
-        </a>
-        <a class="contact-card" href="https://linkedin.com/in/supreet-vardhamane/">
-          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14ZM8.34 18.34V9.94H5.56v8.4h2.78ZM6.95 8.7a1.61 1.61 0 1 0 0-3.22 1.61 1.61 0 0 0 0 3.22Zm11.39 9.64v-4.6c0-2.46-1.31-3.6-3.06-3.6a2.64 2.64 0 0 0-2.39 1.31v-1.12H10.1v8.4h2.78v-4.66c0-1.23.23-2.42 1.76-2.42 1.5 0 1.52 1.4 1.52 2.5v4.58h2.78Z"/></svg>
-          <span class="contact-key">LinkedIn</span>
-          <span class="contact-val">supreet-vardhamane</span>
-        </a>
-        <a class="contact-card" href="https://leetcode.com/u/supreet_vardhamane/">
-          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="m13.5 4-7 8 7 8M9 12h11"/></svg>
-          <span class="contact-key">LeetCode</span>
-          <span class="contact-val">supreet_vardhamane</span>
-        </a>
+      <p class="cmd"><span class="usr">supreet@portfolio</span>:<span class="path">~</span><span class="sym">$</span> <span class="arg">./connect.sh</span></p>
+      <h2 id="contact-h">Let's Build Something Together</h2>
+      <div class="contact-cta">
+        <p class="lead contact-lead">
+          Got an internship, a project, or just an idea worth talking about?
+          My inbox is always open — let's make something.
+        </p>
+        <div class="contact-actions">
+          <a class="btn btn-primary" href="mailto:supreetvardhamane@gmail.com">
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" d="M3 6h18v12H3z"/><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="m3 7 9 6 9-6"/></svg>
+            Email me
+          </a>
+          <a class="btn btn-ghost" href="assets/supreet-resume.pdf" download>
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m0 0 4-4m-4 4-4-4M5 21h14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            Download Resume
+          </a>
+        </div>
+        <ul class="contact-links" aria-label="Find me online">
+          <li><a href="https://github.com/supreetvardhamane">
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 0 0-3.16 19.49c.5.09.68-.22.68-.48v-1.7c-2.78.6-3.37-1.34-3.37-1.34-.45-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.61.07-.61 1 .07 1.53 1.03 1.53 1.03.9 1.53 2.36 1.09 2.94.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.94 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.65 0 0 .84-.27 2.75 1.02a9.5 9.5 0 0 1 5 0c1.91-1.29 2.75-1.02 2.75-1.02.55 1.38.2 2.4.1 2.65.64.7 1.03 1.59 1.03 2.68 0 3.84-2.34 4.69-4.57 4.94.36.31.68.92.68 1.85v2.74c0 .27.18.58.69.48A10 10 0 0 0 12 2Z"/></svg>
+            GitHub</a></li>
+          <li><a href="https://linkedin.com/in/supreet-vardhamane/">
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14ZM8.34 18.34V9.94H5.56v8.4h2.78ZM6.95 8.7a1.61 1.61 0 1 0 0-3.22 1.61 1.61 0 0 0 0 3.22Zm11.39 9.64v-4.6c0-2.46-1.31-3.6-3.06-3.6a2.64 2.64 0 0 0-2.39 1.31v-1.12H10.1v8.4h2.78v-4.66c0-1.23.23-2.42 1.76-2.42 1.5 0 1.52 1.4 1.52 2.5v4.58h2.78Z"/></svg>
+            LinkedIn</a></li>
+          <li><a href="https://leetcode.com/u/supreet_vardhamane/">
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="m13.5 4-7 8 7 8M9 12h11"/></svg>
+            LeetCode</a></li>
+          <li><a href="tel:+919035949777">
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M5 4h3l2 5-2.5 1.5a11 11 0 0 0 5 5L19 18l-1 3a16 16 0 0 1-13-13Z"/></svg>
+            +91 90359 49777</a></li>
+        </ul>
       </div>
     </section>
   </main>
 
-  <!-- ============ FOOTER ============ -->
+  <!-- ===== FOOTER ===== -->
   <footer class="site-footer">
     <div class="container footer-inner">
-      <p class="footer-note">
-        <span class="brand-prompt">~</span>supreet · building in public · 1% better every day
-      </p>
-      <p class="footer-copy">© <span id="year">2026</span> Supreet Vardhamane</p>
+      <p class="footer-note">© <span id="year">2026</span> Supreet Vardhamane · All rights reserved</p>
     </div>
   </footer>
+
+  <!-- ===== mobile bottom app-dock ===== -->
+  <nav class="dock" aria-label="Mobile">
+    <div class="dock-nav">
+      <ul>
+        <li><a class="nav-link" href="#top"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="m3 11 9-8 9 8M5 10v10h14V10"/></svg>home</a></li>
+        <li><a class="nav-link" href="#about"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="4" fill="none" stroke="currentColor" stroke-width="2"/><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" d="M4 21c0-4 4-6 8-6s8 2 8 6"/></svg>about</a></li>
+        <li><a class="nav-link" href="#skills"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="m8 9-3 3 3 3m8-6 3 3-3 3"/></svg>skills</a></li>
+        <li><a class="nav-link" href="#projects"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" d="M3 7h6l2 2h10v10H3z"/></svg>work</a></li>
+        <li><a class="nav-link" href="#contact"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" d="M3 6h18v12H3z"/><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="m3 7 9 6 9-6"/></svg>contact</a></li>
+      </ul>
+    </div>
+  </nav>
 
   <script src="js/main.js" defer></script>
 </body>
